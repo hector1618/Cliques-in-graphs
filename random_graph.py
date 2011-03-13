@@ -1,4 +1,8 @@
 #! usr/bin/python
+# Modules used are
+# 1)tempfile
+# 2)xlwt
+# 3)Random_nos_unique 
 # This program is used to generate the graphs. There are two input parameter- (n,e). n is number of vertices and e is number of edges. This will create the simple connected graph if e >= n-1
 
 import Random_nos_unique as rnu
@@ -8,7 +12,7 @@ e = input("No of edges : ")
 
 if e > n*(n-1)/2:
     print 'To many edges.Will return complete graph'
-    e=n*n(n-1)/2
+    e=n*(n-1)/2
 
 R = rnu.Random_nos_unique(e,n*(n-1)/2)#Random nos generator
 C = [[0 for row in range(n)] for col in range(n)]
